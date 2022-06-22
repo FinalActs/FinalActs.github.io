@@ -1,5 +1,5 @@
 function scrollToItem(item) {
-    var diff=(item.offsetTop-window.scrollY)/30;
+    var diff=(item.offsetTop-window.scrollY)/10;
     if(!window._lastDiff){
         window._lastDiff = 0;
     }
