@@ -470,21 +470,7 @@ html{
 /* Info bar */
 .Info{
     height: 22vw;
-}
-.Info button{
-    margin-top: 0.5vw;
-
-    width: 19vw;
-    height: 5vw;
-
-    font-size: 3vw;
-
-    transition-duration: 0.4s;
-
-    margin-top: 5vw;
-    margin-left: 15vw;
-
-
+    display: none;
 }
 
 /* Home Page*/
