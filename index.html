@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 viewport-fit=cover">
+
+    <link rel="icon" type="image/x-icon" href="Images/Logo.png">
+</head>
+<body>
+    <div class="Info">
+        <ul>
+            <li><button type="button" class="But" onclick='scrollToItem(AboutMeScroll)'>About</button></li>
+            <li><button type="button" class="But" onclick='scrollToItem(ProjectsScroll)'>Things I Do</button></li>
+            <li><button type="button" class="But" onclick='scrollToItem(ContactMeScroll)'>Contact me</button></li>
+        </ul>
+    </div>
+
+    <div class="Scale">
+
+        <div class="HomePage">
+            <img class="HomePageBackground"src="images/HomeBackground.jpg " draggable="false">
+
+            <div class="HomePageText">
+                <h1>Welcome</h1>
+
+                <ul>
+                    <li>
+                        <button><img class="SocialImages" src="Images/Itch.png" onclick=" window.open('https://final-act.itch.io','_blank')"></button>
+                    </li>
+
+                    <li>
+                        <button><img class="SocialImages" src="Images/LinkedIn.png" onclick=" window.open('https://www.linkedin.com/in/evaldas-paulauskas-525803242/','_blank')"></button>
+                    </li>
+
+                    
+                    <li>
+                        <button><img class="SocialImages" src="Images/GitHub.png" onclick=" window.open('https://github.com/FinalActs','_blank')"></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="About">
+            <div class="AboutText">
+                <h1 >About Me</h1>
+            </div>
+        </div>
+
+        <div class="AboutSection" id="AboutMeScroll">
+            <img src="Images/Logo.png"draggable="false">
+
+            <div class="AboutMeText">
+                <h1>Hello,</h1>
+                <h1>I'm a 17 year old freelancer</h1><br>
+                <h1>Coding for 2+ years specialized in c# and unity engine specifications</h1><br>
+                <h1>Doing game assets</h1><br>
+            </div>
+            
+        </div>
+
+        <div class="About">
+            <div class="AboutText">
+                <h1>Things I Do</h1>
+            </div>
+
+            
+        </div>
+        
+        <div class="Projects" id="ProjectsScroll">
+            
+            <ul>
+                <li>
+                    <div class="ProjectSection">
+                        <div class="Img">
+                            <div class="ImageContain">
+                                <div></div>
+                            </div>
+                        </div>
+                        <h1>Game Developement</h1>
+                        <button type="button" onclick='Open(ProjectSectionBack)'>More</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="About">
+            <div class="AboutText">
+                <h1>Contacts</h1>
+            </div>
+        </div>
+
+        
+        <div class="ContactInfo" id="ContactMeScroll">
+            <ul>
+                <li>
+                    <div>
+                        <div class="ContactIcons">
+                            <img src="Images/Email.png">
+                        </div>
+
+                        <h1>evaldaspaulauskas2@gmail.com</h1>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="ProjectSectionWindowBack" id="ProjectSectionBack">
+        <div class="ProjectSectionWindow">
+            <button class="X" onclick='Close(ProjectSectionBack)'>X</button>
+            <h1>Game Developement</h1>
+
+            <div class="ProjectSectionWindowBackText">
+                <h2>Making 2D Unity games for a year </h2><br>
+                <h2>All of the games can be found when pressed the visit button</h2>
+            </div>
+
+            <button type="button" class="Visit" onclick=" window.open('https://final-act.itch.io','_blank')" >Visit</button>
+        </div>
+    </div>
+
+    <script src="Scripts/Scrolling.js"></script>
+    <script src="Scripts/ProjectsMan.js"></script>
+</body>
+</html>
